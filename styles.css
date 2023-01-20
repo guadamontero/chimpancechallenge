@@ -1,0 +1,759 @@
+/* ----------- FUENTES -----------  */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ----------- GENERAL -----------  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------- VARIABLES ----------- */
+:root {
+  --black: rgba(22, 23, 26, 1);
+  --yellow: #d4b03a;
+  --purple: #de79f1;
+  --white: #ffffff;
+  --grey: #626262;
+  --Orbitron: "Orbitron", Arial, Helvetica, sans-serif;
+  --Poppins: "Poppins", Arial, Helvetica, sans-serif;
+  --transition-delay: all 0.2s;
+}
+
+/* ----------- FUENTES ----------- */
+.Orbitron {
+  font-family: var(--Orbitron);
+}
+
+.Poppins {
+  font-family: var(--Poppins);
+}
+
+/* ----------- COLORES ----------- */
+.color-white {
+  color: var(--white);
+}
+
+.color-purple {
+  color: var(--purple);
+}
+
+.color-yellow {
+  color: var(--yellow);
+}
+
+/* ----------- TIPOGRAFIAS ----------- */
+.H2-Titulo-2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.H3-Titulo-3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.H4-Titulo-4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.H5-Titulo-5 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.H6-Titulo-6 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.parrafo {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sub-parrafo {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* ----------- HEADER ----------- */
+
+.navbar {
+  background-color: var(--black);
+}
+
+.navbar .navbar-nav {
+  margin-top: 2rem;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--white);
+  border-bottom: 1px solid transparent;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+  transition: var(--transition-delay);
+}
+
+#menu ul > li > button {
+  visibility: hidden;
+}
+
+/* ----------- MAIN -----------*/
+
+/* ----------- SECTION INICIO ----------- */
+
+.Inicio {
+  background: var(--black) url("./assets/portada.png") no-repeat;
+  background-size: auto;
+}
+
+.container {
+  height: 600px;
+}
+
+.container h5 {
+  width: 60%;
+}
+
+.container h2 {
+  margin: 0 0.5rem;
+}
+
+.container a {
+  background-color: var(--black);
+  width: 90%;
+  font-size: 18px;
+}
+
+.container a:hover {
+  color: var(--purple);
+  background-color: var(--white);
+  transition: var(--transition-delay);
+}
+
+.container .vector1 {
+  width: 10%;
+}
+
+.container .vector2 {
+  width: 30%;
+}
+
+/* ----------- SECTION SOBRE PAMPASEG ----------- */
+
+.SobrePampaSeg {
+  background-color: var(--black);
+  height: 80vh;
+}
+
+.containerSobrePampaSeg {
+  padding: 0.5rem;
+}
+
+.boxSobrePampaSeg {
+  background-color: rgba(67, 67, 67, 0.48);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.boxSobrePampaSeg p {
+  font-size: 14px;
+}
+
+.boxSobrePampaSeg img {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+/* ----------- SECTION HISTORIA PAMPASEG ----------- */
+.containerHistoriaPampaSeg {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerHistoriaPampaSeg .texto {
+  text-align: justify;
+  margin-top: 5rem;
+}
+
+.containerHistoriaPampaSeg .texto p {
+  font-size: 14px;
+}
+
+.containerHistoriaPampaSeg .imagen {
+  min-width: 50vw;
+  background: var(--black) url("./assets/keyboard.png");
+}
+
+.containerHistoriaPampaSeg .texto img {
+  z-index: -1;
+  width: 12%;
+}
+
+/* ----------- SECTION FRASE ----------- */
+.containerFrase {
+  background-color: var(--black);
+  text-align: justify;
+  padding: 3.5rem 2.5rem;
+}
+
+.containerFrase h4 {
+  font-size: 20px;
+}
+
+/* ----------- SECTION ORGANIZADORES ----------- */
+.rectangle {
+  background-color: var(--purple);
+  height: 348px;
+  width: 343px;
+}
+
+.containerOrganizadores .imagen {
+  gap: 2rem;
+}
+
+.containerOrganizadores {
+  flex-direction: column;
+  background-color: var(--black);
+  gap: 6rem;
+  padding: 8rem 0;
+}
+
+.organizadores {
+  border-bottom: 4px solid var(--yellow);
+}
+
+.organizadores,
+.colaboradores {
+  padding: 0 auto;
+  gap: 1.5rem;
+}
+
+.containerOrganizadoresColaboradores {
+  gap: 2rem;
+}
+
+/* ----------- SECTION PARTICIPANTES ----------- */
+
+.containerParticipantes {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerParticipantes .texto {
+  margin: 0 auto;
+}
+
+.containerParticipantes .texto p {
+  text-align: justify;
+  width: 100%;
+}
+
+.containerParticipantes .texto h3 {
+  width: 75%;
+}
+
+.grupoLogo img {
+  padding: 1rem 3rem;
+}
+
+.Participantes {
+  background-color: var(--black);
+}
+
+/* ----------- SECTION MAS SOBRE PAMPA ----------- */
+
+.MasSobrePampa {
+  background-color: var(--black);
+}
+
+.MasSobrePampa h4 {
+  padding: 5rem 0;
+}
+
+.circle {
+  margin-right: 0;
+}
+
+.circle-middle {
+  margin-right: 0;
+}
+
+.circle {
+  width: 308px;
+  height: 308px;
+}
+
+.circle-middle {
+  width: 220.8px;
+  height: 220.8px;
+}
+
+.containerMasSobrePampa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+/* ----------- SECTION GALERIA -----------*/
+
+.Galeria {
+  background-color: var(--black);
+}
+
+.Galeria .title {
+  color: var(--white);
+  border-bottom: 1px solid var(--grey);
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.title h2 {
+  font-family: var(--Orbitron);
+  font-size: 50px;
+}
+
+.carousel {
+  margin-bottom: 3rem;
+}
+
+.carousel > button > span {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.carousel > button > span:hover {
+  background-color: var(--purple);
+  transition: var(--transition-delay);
+}
+
+.Galeria .line {
+  border-top: 1px solid var(--grey);
+  width: 30%;
+  margin-top: 3rem 0;
+}
+
+.vector5 {
+  width: 20%;
+}
+
+.Galeria img{
+  filter: grayscale(1); /* W3C */
+}
+
+/* ----------- SECTION COLABORADORES -----------*/
+
+.Colaboradores {
+  background-color: var(--black);
+}
+
+.Colaboradores h3 {
+  width: 100%;
+}
+
+.Colaboradores p {
+  width: 90%;
+}
+
+.colaboradorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerColaborador {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ----------- SECTION FAQ ----------- */
+
+.faq {
+  background-color: var(--black);
+  padding: 5rem 0;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.accordion-header:active {
+  color: var(--purple);
+}
+
+.accordion button {
+  background-color: transparent;
+  color: var(--white);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #de79f1;
+}
+
+.accordion-button::after {
+  background-image: url("./assets/arrowDown.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("./assets/arrowDown.svg");
+}
+
+.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+.accordion .accordion-item {
+  border: 2px solid var(--purple);
+  background-color: var(--black);
+}
+
+.accordion-item {
+  border-radius: 30px;
+  padding: 0.3rem 0;
+}
+
+.accordion-header {
+  font-family: var(--Poppins);
+  font-size: 16px;
+}
+
+.accordion-body {
+  font-family: var(--Poppins);
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.faqButton > a {
+  padding: 4rem;
+}
+
+.faqButton > a:hover {
+  background-color: var(--white);
+  color: var(--purple);
+  transition: var(--transition-delay);
+  cursor: pointer;
+}
+
+/* ----------- SECTION CONTACTO ----------- */
+.Contacto {
+  background: lightblue url("./assets/ContactImage.png") no-repeat center;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.formContainer {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(98, 98, 98, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  position: relative;
+}
+
+.formContainer h4 {
+  width: 80%;
+}
+
+.formContainer > form > a:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.formContainer > form .form-control {
+  background-color: transparent;
+  border: none;
+  border-radius: 0%;
+}
+
+.formContainer > form .form-control:focus {
+  box-shadow: inherit;
+}
+
+.form-submit {
+  visibility: hidden;
+}
+
+.form-submit-active {
+  visibility: visible;
+}
+
+/* ----------- FOOTER -----------*/
+
+footer {
+  background-color: var(--black);
+}
+
+.instagram > img {
+  width: 25%;
+}
+
+/* ----------- MEDIAS QUERIES -----------*/
+
+@media only screen and (min-width: 625px) {
+  .containerMasSobrePampa {
+    flex-direction: row;
+    gap: 0;
+  }
+  .circle {
+    margin-right: -3rem;
+  }
+  .circle-middle {
+    margin-right: -1.5rem;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  /* ----------- HEADER ----------- */
+  #menu ul > li > button {
+    visibility: visible;
+    background-color: var(--black);
+    color: var(--yellow);
+  }
+  #menu ul > li > button:hover {
+    color: var(--white);
+    background-color: var(--yellow);
+    transition: var(--transition-delay);
+  }
+  .navbar .navbar-nav {
+    margin-top: 0;
+  }
+
+  /* ----------- MAIN ----------- */
+
+  /* ----------- SECTION INICIO ----------- */
+  .container h5 {
+    margin: 0 15rem;
+  }
+  .container h2 {
+    margin: 0 20rem;
+  }
+  .container .vector1 {
+    width: 5%;
+  }
+  .container .vector2 {
+    width: 18%;
+  }
+  .container {
+    height: 860px;
+  }
+  .container a {
+    width: 30%;
+  }
+
+  /* ----------- SECTION SOBRE PAMPASEG ----------- */
+  .SobrePampaSeg {
+    background: var(--black) url("./assets/vectoresSobrePampaSeg.svg") no-repeat;
+    background-size: auto;
+    height: 70vh;
+  }
+
+  .containerSobrePampaSeg {
+    padding: 5rem 6.5rem;
+  }
+
+  .boxSobrePampaSeg {
+    margin: 3.5rem 1rem;
+  }
+
+  .boxSobrePampaSeg h3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .boxSobrePampaSeg p {
+    padding-bottom: 1rem;
+    font-size: 18px;
+  }
+
+  .boxSobrePampaSeg {
+    margin-top: -6rem;
+    z-index: 97;
+  }
+
+  .boxSobrePampaSeg img {
+    right: 220px;
+    bottom: 80px;
+  }
+
+  /* ----------- SECTION HISTORIA PAMPASEG ----------- */
+  .containerHistoriaPampaSeg {
+    flex-direction: row;
+  }
+
+  .containerHistoriaPampaSeg .texto p {
+    margin: 1rem 7rem 0 3rem;
+  }
+
+  .containerHistoriaPampaSeg .texto img {
+    width: 7%;
+  }
+
+  .containerHistoriaPampaSeg .texto p {
+    font-size: 18px;
+  }
+
+  /* ----------- SECTION FRASE ----------- */
+  .containerFrase {
+    padding: 3.5rem 9rem;
+  }
+
+  .containerFrase h4 {
+    font-size: 32px;
+  }
+
+  /* ----------- SECTION PARTICIPANTES ----------- */
+  .containerParticipantes {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .organizadores,
+  .colaboradores {
+    padding: 0 10rem;
+    gap: 1.5rem;
+  }
+
+  .containerParticipantes .texto h2 {
+    width: 75%;
+  }
+
+  .containerParticipantes .texto p {
+    width: 65%;
+  }
+
+  .circle {
+    width: 358px;
+    height: 358px;
+  }
+
+  .containerColaborador {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  /* ----------- SECTION GALERIA -----------*/
+  .Galeria .title {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+
+  .title h2 {
+    font-size: 100px;
+  }
+
+  
+/* ----------- SECTION COLABORADORES ----------- */
+  .Colaboradores h4 {
+    width: 40%;
+  }
+
+/* ----------- SECTION FAQ -----------*/
+  .accordion {
+    width: 70%;
+  }
+
+/* ----------- SECTION CONTACTO -----------*/ 
+  .formContainer {
+    padding: 2rem 0;
+    margin: 0 4rem;
+    width: 48%;
+  }
+
+  .Contacto {
+    padding: 4rem 7rem;
+  }
+
+  .formContainer form {
+    margin: 0 5rem;
+  }
+
+/* ----------- FOOTER ----------- */ 
+  footer {
+    padding: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .containerOrganizadores {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  /* ----------- MAIN  -----------*/
+  /* ----------- SECTION SOBRE PAMPASEG -----------*/
+  .boxSobrePampaSeg {
+    margin-top: -4rem;
+  }
+
+  .boxSobrePampaSeg h3 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .boxSobrePampaSeg p {
+    padding-bottom: 5rem;
+  }
+
+  .containerSobrePampaSeg {
+    padding: 10rem 13rem;
+  }
+
+  /* ----------- SECTION HISTORIA PAMPASEG -----------*/
+  .containerHistoriaPampaSeg .texto p {
+    margin: 1rem 9rem 0 5rem;
+  }
+
+  /* ----------- SECTION FRASE ----------- */
+  .containerFrase {
+    padding: 5rem 19rem;
+  }
+
+  .vector5 {
+    width: 12%;
+  }
+}

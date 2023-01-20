@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <title>PampaSeg</title>
+  </head>
+  <body>
+
+    <header>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top p-2
+        border-bottom border-dark Poppins">
+        <div class="container-fluid px-5 sticky-top">
+
+          <!-- logo -->
+          <a class="navbar-brand logo-animation" href="#" id="logo"><img
+              src="./assets/logos/logo.svg" alt="logo" loading="lazy"></a>
+
+          <!-- boton del menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- elementos del menu collapse -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto flex-row flex-wrap">
+              <li class="nav-item col-6 col-md-auto px-2 fw-light">
+                <a class="nav-link d-flex" href="#">HOME</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto px-2 fw-light">
+                <a class="nav-link" href="#">PAMPASEG</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto px-2 fw-light">
+                <a class="nav-link" href="#">SER HACKER</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto px-2 fw-light">
+                <a class="nav-link" href="#">CUÉNTAME MÁS</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto px-2 fw-light">
+                <a class="nav-link" href="#">MEDIOS</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto px-2 fw-light">
+                <a class="nav-link" href="#">NOSOTROS</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto px-2 fw-light">
+                <button class="rounded-pill border border-2 border-warning px-3
+                  py-2 mx-3" aria-label="Next edition">Próxima Edición</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section class="Inicio">
+        <div class="container d-flex flex-column align-items-center
+          justify-content-center">
+          <h5 class="py-3 H5-Titulo-5 text-light Orbitron text-center
+            text-uppercase">Una de las conferencias mas historicas de
+            latinoamerica en</h2>
+          <h2 class="py-3 H2-Titulo-2 color-purple Orbitron text-center
+            text-uppercase">seguridad informática.</h3>
+          <a href="#SobrePampaSeg" class="rounded-pill border border-light
+            border-2 fw-light py-3 mt-3 text-center Poppins color-white
+            text-uppercase">ver más</a>
+          <img class="position-absolute top-1 start-0 vector1"
+            src="./assets/purpleVector.svg" alt="vector1" loading="lazy">
+          <img class="position-absolute mt-5 pt-5 top-0 end-0 vector2"
+            src="./assets/yellowVector.svg" alt="vector2" loading="lazy">
+        </div>
+      </section>
+
+      <section class="SobrePampaSeg" id="SobrePampaSeg">
+        <div class="containerSobrePampaSeg">
+          <div class="boxSobrePampaSeg border border-1 border-secondary p-5
+            text-light H4-Titulo-4" id="ScrollAnimation">
+            <h3 class="text-center mb-4 fw-normal Orbitron text-uppercase">sobre
+              el pampaseg</h3>
+            <p class="fw-light text-center Poppins">PampaSeg es una jornada que
+              se encuentra en su 15° edición, donde profesionales en el tema
+              podrán brindar sus conocimientos y experiencia, a todos los
+              jóvenes y adultos interesados; ya sea porque estudian o trabajan
+              en áreas relacionadas con las tecnologías de la información y las
+              comunicaciones, o simplemente desean ingresar a este mundo que
+              sigue sumando adeptos, para enriquecer sus conocimientos y
+              aplicarlos en la actividad diaria.</p>
+            <img src="./assets/handIcon.svg" alt="handIcon" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="HistoriaPampaSeg">
+        <div class="containerHistoriaPampaSeg position-relative">
+          <div class="imagen w-50">
+          </div>
+          <div class="texto d-flex flex-column align-items-center">
+            <p class="fw-light px-5 lh-base parrafo Poppins">En su génesis, allí
+              por el año 2009, no encontrábamos un espacio de reunión, difusión
+              ni puesta en común de estas, nuestras pasiones, los avances
+              tecnológicos, las comunicaciones, la ciberseguridad y porqué no
+              llamarlo de otro modo: el hacking.
+              <br/>
+                Como se dice popularmente “conocemos de oído” que en el mundo
+                existían otros eventos similares, y de hecho en nuestra propia
+                ciudad se realizaron lo que se denominaban encuentros de los
+                “LUG’s” siglas de Grupo de usuarios de Linux, donde siempre
+                participamos y viendo que primaban ciertas peculiaridades
+                resumidas al egos de sus integrantes (y el nuestro propio) cuyo
+                destino inequívoco fue la autodestrucción.</p>
+              <img class="position-absolute mt-5 top-0 end-0 w-25"
+                src="./assets/purpleVector2.svg" alt="vector3" loading="lazy">
+              <img class="my-5" src="./assets/puntos.svg" alt="vector4"
+                loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <section class="Frase">
+          <div class="containerFrase Poppins">
+            <img class="my-2 mb-5" id="ScrollAnimation"
+              src="./assets/comillas.svg" alt="comillas" loading="lazy">
+            <h4 class="fw-light text-light" id="ScrollAnimation">Saliendo de una
+              descripción poética y yendo a la dura literalidad, PampaSeg es una
+              conferencia que se realiza todos los años, con un simple pero
+              único fin, la <span class="texto1 color-yellow">integración de
+                nuevas tecnologías, compartir conocimientos, pensamientos,
+                experiencias y vivencias.</span> <span class="texto2 pb-5
+                color-purple">Es libre, es gratuito, y es orgullosamente
+                pampeano, como el Caldén.</span>
+              <br/>
+                Año tras año recorremos el mundo participando de las
+                conferencias más importantes, recopilando y replicando todos
+                aquellos contenidos que consideramos son útiles para nuestra
+                comunidad.</h4>
+            </div>
+          </section>
+
+          <section class="Organizadores">
+            <div class="containerOrganizadores d-flex justify-content-center
+              align-items-center">
+              <article class="imagen d-flex flex-column justify-content-center
+                align-items-center">
+                <figure class="rectangle d-flex justify-content-center
+                  align-items-center">
+                  <img src="./assets/Federico.png" alt="Federico"
+                    loading="lazy">
+                </figure>
+                <div class="text-center Poppins text-light">
+                  <p class="fw-light parrafo">Federico Bustos Reyes</p>
+                  <p class="fw-lighter sub-parrafo">Fundador</p>
+                </div>
+              </article>
+              <article class="texto">
+                <div class="containerOrganizadoresColaboradores d-flex
+                  flex-column justify-content-between">
+                  <div class="organizadores d-flex flex-column
+                    align-items-center">
+                    <h5 class="H5-Titulo-5 Orbitron color-purple
+                      text-uppercase">organizadores</h5>
+                    <p class="Poppins H6-Titulo-6 text-light fw-light">Ariel
+                      Orellana</p>
+                    <p class="Poppins H6-Titulo-6 text-light fw-light">Micaela
+                      Gutierrez</p>
+                    <p class="Poppins H6-Titulo-6 text-light fw-light">Emiliano
+                      Pellizari</p>
+                    <p class="pb-4 Poppins H6-Titulo-6 text-light fw-light">Daniel
+                      Zarza</p>
+                  </div>
+                  <div class="colaboradores d-flex flex-column
+                    align-items-center">
+                    <h5 class="H5-Titulo-5 Orbitron color-purple
+                      text-uppercase">colaboradores</h5>
+                    <p class="Poppins H6-Titulo-6 text-light fw-light">Claudio
+                      Monaldi</p>
+                    <p class="Poppins H6-Titulo-6 text-light fw-light">Cristian
+                      Menjibar</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="Participantes">
+            <div class="container-sm">
+              <div class="containerParticipantes">
+                <article class="texto col-md-6 mb-md-3 position-relative">
+                  <h3 class="pb-3 H3-Titulo-3 color-yellow Orbitron ">En estos
+                    últimos 11 años hemos participado de eventos como:</h3>
+                  <p class="sub-parrafo color-white">Lorem ipsum dolor sit amet,
+                    conLorem ipsum dolor sit amet, conLorem ipsum dolor sit
+                    amet, conLorem ipsum dolor sit amet, con</p>
+                  <img class="position-absolute top-0 start-50 pt-5 mt-3 me-5
+                    ps-5" src="./assets/handIcon2.svg" alt="handIcon2"
+                    loading="lazy">
+                </article>
+                <article class="logos col-md-6">
+                  <div class="row justify-content-center align-items-center">
+                    <figure class="col-sm-3 text-center">
+                      <img src="./assets/logos/logo1.svg" alt="logo1"
+                        loading="lazy">
+                    </figure>
+                    <figure class="col-sm-3 text-center px-2">
+                      <img src="./assets/logos/logo2.svg" alt="logo2"
+                        loading="lazy">
+                    </figure>
+                    <figure class="col-sm-3 text-center px-2">
+                      <img src="./assets/logos/logo3.svg" alt="logo3"
+                        loading="lazy">
+                    </figure>
+                  </div>
+                  <div class="row justify-content-center align-items-center">
+                    <figure class="col-sm-3 text-center">
+                      <img src="./assets/logos/logo4.svg" alt="logo4"
+                        loading="lazy">
+                    </figure>
+                    <figure class="col-sm-3 text-center">
+                      <img src="./assets/logos/logo5.svg" alt="logo5"
+                        loading="lazy">
+                    </figure>
+                    <figure class="col-sm-3 text-center">
+                      <img src="./assets/logos/logo6.png" alt="logo6"
+                        loading="lazy">
+                    </figure>
+                  </div>
+                  <div class="row justify-content-center align-items-center">
+                    <figure class="col-sm-3 text-center">
+                      <img src="./assets/logos/logo7.png" alt="logo7"
+                        loading="lazy">
+                    </figure>
+                    <figure class="col-sm-3 text-center">
+                      <img src="./assets/logos/logo8.png" alt="logo8"
+                        loading="lazy">
+                    </figure>
+                    <figure class="col-sm-3 text-center">
+                      <img src="./assets/logos/logo9.png" alt="logo9"
+                        loading="lazy">
+                    </figure>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="MasSobrePampa">
+              <h4 class="H4-Titulo-4 text-light Orbitron text-center">Más sobre
+                la Pampa</h4>
+              <div class="containerMasSobrePampa">
+                <div class="circle d-flex justify-content-center
+                  align-items-center border border-1 border-light rounded-pill">
+                  <img src="./assets/wikipedia.svg" alt="wikipediaLogo">
+                </div>
+                <div class="circle d-flex justify-content-center
+                  align-items-center border border-1 border-light rounded-pill">
+                  <img src="./assets/lapampa.svg" alt="lapampaLogo">
+                </div>
+              </div>
+            </section>
+
+            <section class="Galeria d-flex flex-column align-items-center">
+              <div class="title d-flex">
+                <h2 class="ms-auto fw-light pb-3 text-uppercase">galería</h2>
+              </div>
+              <div id="carouselExampleControlsNoTouching" class="carousel slide"
+                data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex">
+                      <figure class="purple-image">
+                        <img src="./assets/galeria/imagen1.png" class="d-block
+                          w-100" alt="imagen1">
+                      </figure>
+                      <figure class="blackandwhite-image">
+                        <img src="./assets/galeria/imagen2.png" class="d-block
+                          w-100" alt="imagen2">
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex">
+                      <img src="./assets/galeria/imagen1.png" class="d-block
+                        w-100" alt="imagen1">
+                      <img src="./assets/galeria/imagen2.png" class="d-block
+                        w-100" alt="imagen2">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex">
+                      <img src="./assets/galeria/imagen1.png" class="d-block
+                        w-100" alt="imagen1">
+                      <img src="./assets/galeria/imagen2.png" class="d-block
+                        w-100" alt="imagen2">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                  data-bs-target="#carouselExampleControlsNoTouching"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                  data-bs-target="#carouselExampleControlsNoTouching"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="line"></div>
+            </section>
+
+            <section class="Colaboradores d-flex flex-column
+              justify-content-center align-items-center position-relative">
+              <h4 class="H4-Titulo-4 text-light Orbitron text-center pt-5 mt-5">Comunidades,
+                Empresas y Organismos colaboradores</h4>
+              <p class="text-center fw-lighter text-light py-4 mb-5 parrafo">PampaSeg
+                no seria posible sin la colaboracion de ellos.</p>
+              <div class="containerColaboradores d-flex flex-column gap-4">
+                <div class="containerColaborador">
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador1.svg"
+                      alt="wikipediaLogo">
+                  </figure>
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador2.svg"
+                      alt="lapampaLogo">
+                  </figure>
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador3.svg"
+                      alt="lapampaLogo">
+                  </figure>
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador4.svg"
+                      alt="lapampaLogo">
+                  </figure>
+                </div>
+                <div class="containerColaborador">
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador5.svg"
+                      alt="wikipediaLogo">
+                  </figure>
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador6.svg"
+                      alt="lapampaLogo">
+                  </figure>
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador7.svg"
+                      alt="lapampaLogo">
+                  </figure>
+                  <figure class="circle-middle d-flex justify-content-center
+                    align-items-center border border-1 border-light
+                    rounded-pill">
+                    <img src="./assets/colaboradores/colaborador8.svg"
+                      alt="lapampaLogo">
+                  </figure>
+                </div>
+                <img class="position-absolute bottom-0 end-0"
+                  src="./assets/purpleVector4.svg" alt="vector6">
+                <figure>
+                  <img class="position-absolute top-0 start-0 vector5"
+                    src="./assets/purpleVector3.svg" alt="vector5">
+                </figure>
+              </div>
+            </section>
+
+            <section class="faq d-flex flex-column align-items-center">
+              <h3 class="H4-Titulo-4 text-light Orbitron text-center pb-5 mb-5">Faq</h3>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item visually-hidden"></div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      ¿Pampaseg tiene algún fin de lucro?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse"
+                    aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                      <p>
+                        No, el evento fue, es y seguirá siendo libre, abierto y
+                        gratuito. Y no persigue otro fin, más que el de mantener
+                        el espíritu colaborativo, Y que los contenidos y el
+                        conocimiento tienen un precio aún más alto, que el
+                        crecimiento y la formación de una sociedad
+                        descentralizada, rica en sabiduría y con los estándares
+                        tecnológicos de una población moderna.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      Pero entonces, ¿Cómo se financian?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo">
+                    <div class="accordion-body">
+                      <p>
+                        Esta es la parte más difícil de llevar adelante
+                        PampaSeg. El evento es financiado por empresas, ong,
+                        entes gubernamentales y particulares que creen en lo
+                        mismo que nosotros, que juntos podemos y que es la forma
+                        de construir una sociedad más justa para todos.
+                        <br>
+                        Siempre estamos abiertos a donaciones y aportes, pero no
+                        contamos con un sistema de sponsoreo, con lo cual
+                        mantenemos los intereses particulares exógenos al
+                        evento, fuera de él, evitando condicionamientos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Perfecto, pero si no ganan nada, ¿Por qué lo hacen?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="headingThree">
+                    <div class="accordion-body">
+                      <p>
+                        El hecho de hacer un evento de estas características
+                        ayuda a mantener un vínculo con todas aquellas personas
+                        que se ofrecen para dar las charlas y acompañarnos año
+                        tras año para cultivar que los profesionales y
+                        entusiastas tengan un espacio de formación de calidad en
+                        nuestra provincia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                      aria-expanded="false" aria-controls="collapseFour">
+                      ¿Los disertantes, tutores, cobran por participar?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="headingFour">
+                    <div class="accordion-body">
+                      <p>
+                        ¡Hasta ahora nadie nos cobró!. Como mencionamos
+                        anteriormente, los disertantes se anotan voluntariamente
+                        y muchos de ellos vienen desde muy lejos: además de
+                        Buenos Aires, Córdoba, Tucumán, Salta, Chaco, entre
+                        otras, hemos contado con expositores de Chile, Colombia,
+                        EEUU, Canadá y España. De cualquier forma tratamos de
+                        solventar los gastos de pasajes y estadía para que
+                        puedan acompañarnos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item visually-hidden"></div>
+              </div>
+              <div class="faqButton">
+                <a class="rounded-pill border border-light border-2 fw-light
+                  py-3 mt-3 text-center Poppins color-white text-uppercase">ver
+                  más</a>
+              </div>
+            </section>
+
+            <section class="Contacto">
+              <div class="formContainer border border-1 border-secondary">
+                <form class="d-flex flex-column">
+                  <h6 class="H6-Titulo-6 Poppins text-light fw-light">¿Te quedan
+                    dudas?</h6>
+                  <h4 class="H4-Titulo-4 Orbitron text-light fw-lighter py-4">Ponete
+                    en contacto con nosotros.</h4>
+                  <div class="mb-1">
+                    <label for="name" class="form-label text-light parrafo
+                      fw-lighter Poppins">Nombre:</label>
+                    <input type="text" class="form-control border-bottom
+                      border-light mb-2">
+                  </div>
+                  <div class="mb-1">
+                    <label for="email" class="form-label text-light parrafo
+                      fw-lighter Poppins">E-Mail:</label>
+                    <input type="email" class="form-control border-bottom
+                      border-light mb-2" id="exampleInputEmail1"
+                      aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-1">
+                    <label for="subject" class="form-label text-light parrafo
+                      fw-lighter Poppins">Asunto:</label>
+                    <input type="text" class="form-control border-bottom
+                      border-light mb-2">
+                  </div>
+                  <div class="mb-1">
+                    <label for="message" class="form-label parrafo text-light
+                      fw-lighter Poppins">Mensaje:</label>
+                    <textarea class="form-control border-bottom border-light
+                      mb-2"></textarea>
+                  </div>
+                  <a class="btn btn-light color-purple mt-5 parrafo fw-light
+                    Poppins border rounded-pill py-3" onclick="openAlert()">Enviar</a>
+                </form>
+                <div class="alert alert-success alert-dismissible fade show mt-5
+                  form-submit" role="alert">
+                  <p>Tu mensaje ha sido enviado con éxito!</p>
+                  <button type="button" class="btn-close"
+                    data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+              </div>
+            </section>
+          </main>
+          <footer>
+            <div class="containerFooter Poppins d-flex flex-column
+              justify-content-center align-items-center gap-4 position-relative
+              p-5">
+              <img src="./assets/logos/logo.svg" alt="logo">
+              <div class="contactInformation d-flex gap-3">
+                <div class="phone d-flex gap-2 align-items-center">
+                  <img src="./assets/footer/phone.svg" alt="phone">
+                  <p class="parrafo text-light fw-lighter">+54 9 11 4991-3432</p>
+                </div>
+                <div class="instagram d-flex gap-2 align-items-center">
+                  <img src="./assets/footer/instagram.svg" alt="instagram">
+                  <p class="parrafo text-light fw-lighter">f@psg.sh</p>
+                </div>
+              </div>
+              <p class="parrafo color-yellow fw-lighter">&#169; Copyright 2023 -
+                Lift Media</p>
+              <img class="position-absolute top-0 end-0 pe-5 ms-5 pt-5"
+                src="./assets/footer/Dinosaur.svg" alt="dinosaur">
+            </div>
+          </footer>
+          <!-- Bootstrap -->
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+          <!-- CDN GSAP -->
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+            integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+            integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="./app.js"></script>
+
+
+        </body>
+      </html>
+    </html>
